@@ -1,2 +1,45 @@
+\section{Zielsetzung}
+In diesem Versuch werden das Emissionsspektrum einer Kupfer-Röntgenröhre sowie diverse Absorptionsspektren aufgenommen und untersucht.
+
 \section{Theorie}
 \label{sec:Theorie}
+
+Röntgenstrahlen werden erzeugt, in dem in einer evakuierten Röhre Elektronen aus einer Glühkathode beschleunigt werden.
+Diese treffen auf eine Kupferanode. An dieser werden sie werden sie abgebremst und die verlorene kinetische Energie wird in ein Photon umgewandelt. Entsteht ein kontinuierliches Bremsspektrum wie in ABBILDUNG zu sehen.
+%TODO: Abbildung Bremsspektrum
+Die Kontinuität urt daher, dass die Elektronen sowohl einen Teil ihrer kinetischen Energie wie auch die gesamte kinetische Energie abgeben können.
+Geben sie ihre gesamte Energie ab, so hat der Lichtquant entsprechend die minimale Wellenlänge
+
+\begin{equation}
+    \label{eqn:lambda-min}
+    \lambda_\text{min} = \frac{h c}{e_0 U}.
+\end{equation}
+
+Das kontinuierliche Spektrum wird des Weiteren von einem charakteristischen Spektrum überlagert.
+Dieses entsteht, wenn die Elektronen ein Atom ionisieren. Anschließend fällt ein Elektron aus einer höheren Schale herunter und emittiert ein Photon mit einer materialspezifischen Energie.
+Die Frequenz dieses Photons wird mittels
+
+\begin{equation}
+    \label{eqn:schalen}
+    E_\text{m} - E_\text{n} = h \nu
+\end{equation}
+
+berechnet, wobei $E_\text{m}$ und $E_\text{n}$ die jeweiligen Energieniveaus im Atom sind.
+Das charakteristische Spektrum zeigt sich als stark ausgeprägte, scharfe Linien.
+Dabei gilt für die Bindungsenergie
+
+\begin{equation}
+    \label{eqn:Bindungsenergie}
+    E_\text{n} = -R_\infty z_\text{eff}^2 \cdot \frac{1}{n^2}.
+\end{equation}
+
+Dies liegt daran, dass die Wechselwirkung der Elektronen untereinander die Coulomb-Kraft zum Kern hin abschirmt.
+Hierbei ist $R_\infty = 13.6$ eV die Rydbergenergie, $\sigma$ die Abschirmkonstante und $z_\text{eff} = z - \sigma$ die effektive Kernladung.
+Es ist zu beachten, dass sich die Abschirmkonstante für jedes einzelne Elektron unterscheidet.
+Auch da die äußeren Elektronen sich im Bahndrehimpuls und im Spin unterscheiden, sind die charakteristischen Linien in der Regel eher sehr eng beieinander liegende feinere Linien.
+
+Bei Absorption von Röntgenstrahlen mit Energien <1 MeV sind der Compton- sowie der Photoeffekt die dominanten Prozesse.
+Dabei nimmt der Absorptionskoeffizient mit zunehmender Energie ab und steigt sprunghaft, wenn die Photonenenergie gerade groß genug ist, um ein Atom zu ionisieren.
+Daraufhin fällt er erneut ab, bis ein Elektron aus der nächsten Schale herausgestoßen werden kann.
+
+Die Abschirmkonstante lässt sich über die Energiedifferenz $\Delta E_\text{L} = E_\text{L,II} - E_\text{L,III}$

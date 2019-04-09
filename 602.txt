@@ -1,0 +1,37 @@
+                Energie keV     Winkel in rad
+Cu-K_\alpha     8.027           0.398
+Cu-K_\beta      8.904           0.353
+
+        Z       Energie keV     Bragg-Winkel     deg        Abschirmkonstante
+Zn     30       8.615               0.366      20.970         
+Ge     32       9.855               0.318      18.220         
+Br     35       13.474              0.262      15.011         
+Rb     37       13.335              0.233      13.349         
+Sr     38       14.098              0.220      12.605         
+Zr     40       17.997              0.198      11.344         
+Nb     41       16.521              0.188      10.771         
+
+
+d=201.4*10**(-12)
+c=3*10**8
+h=6.626*10**(-34)
+E=16.104
+n=1
+E=E*1.602*10**(-16)
+
+lam=c*h/E
+
+theta = np.arcsin((n*lam)/(2*d))
+
+print(theta * (360/(2*np.pi)))
+
+np.array([0.366, 0.318, 0.262, 0.233, 0.220, 0.198, 0.188]) * (360/(2*np.pi))
+
+
+
+
+
+
+
+
+http://www.yourperiodictable.com/strontium.php
