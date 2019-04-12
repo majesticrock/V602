@@ -42,4 +42,32 @@ Bei Absorption von Röntgenstrahlen mit Energien <1 MeV sind der Compton- sowie 
 Dabei nimmt der Absorptionskoeffizient mit zunehmender Energie ab und steigt sprunghaft, wenn die Photonenenergie gerade groß genug ist, um ein Atom zu ionisieren.
 Daraufhin fällt er erneut ab, bis ein Elektron aus der nächsten Schale herausgestoßen werden kann.
 
-Die Abschirmkonstante lässt sich über die Energiedifferenz $\Delta E_\text{L} = E_\text{L,II} - E_\text{L,III}$
+Die Abschirmkonstante lässt sich über die Energiedifferenz von zwei $L$-Kanten bestimmt werden. Da in diesem Versuch allerdings die ersten zwei Kanten nicht aufgelöst werden können, sodass die Energiedifferenz $\L$ $\Delta E_\text{L} = E_\text{L,II} - E_\text{L,III}$ verwendet wird.
+
+Somit berechnet sich die Abschirmkonstante wie folgt:
+
+\begin{equation}
+    \label{eqn:abschirm}
+    \sigma_\text{L} = Z - \bigg( \frac{4}{\alpha} \sqrt{\frac{Delta E_\text{L}}{R_\infty }} - \frac{5 \Delta E_\text{L}}{R_\infty} \bigg)^\frac{1}{2} \cdot \bigg( 1 + \frac{19}{32} \alpha^2 \frac{\Delta E_\text{L}}{R_\infty} \bigg)^\frac{1}{2}.
+\end{equation}
+
+Dabei ist $\alpha$ die Feinstrukturkonstante.
+
+Die Energie eines Röntgenquants wird experimentell mittels Bragg'scher Reflexion bestimmt.
+Dabei wird das Licht an einem Kristall reflektiert und man erhält bei einem Glannzwinkel $\theta$ konstruktive Interferenz.
+Ist die Gitterkonstate $d$ des Kristalls bekannt, kann die zum Winkel gehörige Wellenlänge über die Bragg'sche Bedingung
+
+\begin{equation}
+    \label{eqn:bragg}
+    2 d \sin (\theta) = n \lambda
+\end{equation}
+
+berechnet werden. Dabei ist $n$ die Ordnung, bei der die Interferenz auftritt.
+Über den Zusammenhang $E = h \nu$ lässt sich die Bragg'sche Bedingung auch als Energie abhängig von dem Winkel formulieren:
+
+\begin{equation}
+    \label{eqn:bragg-energie}
+    E = \frac{h c}{2 d \sin (\theta )},
+\end{equation}
+
+wobei $h$ das Planck'sche Wirkungsquantum und $c$ die Lichtgeschwindigkeit ist.
