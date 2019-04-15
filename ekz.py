@@ -29,20 +29,20 @@ for values in werte:
     if(ignore):
         ignore = False
     else:
-        xdata[i] = np.sqrt(float(values[2]))
-        ydata[i] =  float(values[1]) 
+        ydata[i] = np.sqrt(float(values[2]))
+        xdata[i] =  float(values[1]) 
         i+=1
 
-x_line = np.linspace(30, 45)
+x_line = np.linspace(29, 41)
 plt.plot(xdata, ydata, "rx", label="Messdaten")
 popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(x_line, func(x_line, *popt), "b-", label="Fit")
-
 print(popt)
-print(pcov)
+print(popt**2)
+print(np.sqrt(np.diag(pcov)))
 
-plt.xlabel(r"$\sqrt{E_{\symup{K}}} $ / $\sqrt{\symup{eV}}")
-plt.ylabel(r"$Z$")
+plt.ylabel(r"$\sqrt{E_{\symup{K}}} $ / $\sqrt{\symup{eV}}")
+plt.xlabel(r"$Z$")
 plt.legend()
 plt.tight_layout()
 plt.savefig("build/ekz.pdf")

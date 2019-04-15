@@ -34,7 +34,8 @@
         \\ \\
         und damit um $7.35 \%$ unterhalb des gemessenen Wertes.
 
-    \subsubsection{Auflösungsvermögen der Apparatur} 
+    \subsubsection{Auflösungsvermögen der Apparatur}
+        \label{sec:cu} 
         Um das Auflösungsvermögen der Apparatur zu bestimmen werden die Winkel abgelesen an denen die $K_{\symup{\alpha}}$ und die $K_{\symup{\beta}}$
         Line auf die Hälfte ihres Maximums abgesunken sind.
         Diese liegen bei:
@@ -82,11 +83,155 @@
         \centerline{$\sigma_2 = z - 2 \sqrt{\frac{R_{\inf}(z - \sigma_1)^2 - E_{\symup{\alpha}}}{R_{\inf}}} = 13.24 $,}
         \\ \\
         wobei $z = 29$ die Ordungszahl von Kupfer und $R_{\infty} = 13.6 \symup{eV}$ die Rydbergenergie ist.
-\subsection{Absorbstionsspektren verschiedener Elemente}    
+\subsection{Bestimmung der Abschirmkonstanten verschiedener Elemente} 
+\label{sec:bah}
     In diesem Versuchsteil sind Absorbstionsspektren verschiedener Elemente aufgenommen worden. Aus diesen werden die Energien der 
-    K-Kanten entnommen und daraus die zugehörigen Abschirmzahlen bestimmt. Diese werden mit den zuvor berechneten Werten verglichen.
+    K-Kanten entnommen und daraus die zugehörigen Abschirmzahlen bestimmt. Diese werden mit Literaturwerten verglichen.
         \input{../content/messung.tex}
+        \subsubsection{Zink}
+            Das Absorptionsspektrum von Zink ist in Abbildung 3 des Anhanges zu sehen.
+            Die K-Kante von Zink ist bei einem Winkel von $18.9°$ zu sehen. Der darauffolgende
+            wesentlich stärkere Anstieg bei ca. $20°$ kann mit \autoref{sec:cu} als 
+            $\symup{K_{\symup{\beta}}}$-Linie des Kupfers identifiziert werden und wird
+            daher hier nicht weiter beachtet. Mittels Gleichung \eqref{eqn:bragg-energie} lässt sich
+            die Absorptionsenergie an der K-Kante zu 
+            \\ \\
+            \centerline{$E_{\symup{K, Zn}} = 9.51$keV}
+            \\ \\
+            bestimmen, wodurch eine Abweichung von $1.54 \%$ vom Literaturwert
+            \\ \\
+            \centerline{$E_{\symup{Lit, Zn}} = 9.659$ keV \cite{periodic}}
+            \\ \\
+            vorliegt. Über die Gleichung \eqref{eqn:fein-struktur} wird die Abschirmkonstante 
+            \\ \\
+            \centerline{$\sigma_{\symup{K, Zn}} = 3.56$}
+            \\ \\
+            berechnet, wobei die Ordnungszahl von Zink $Z = 30$ ist.
+            Über die selbe Gleichung wird ein Vergleichswert mit dem Literaturwert der Energie 
+            errechnet. Dieser ist
+            \\ \\
+            \centerline{$\sigma_{\symup{Lit, Zn}} = 3.35$,}
+            \\ \\
+            womit eine Abweichung von $5.90 \%$ vorliegt.
+        \subsubsection{Brom}
+            In diesem Teil der Auswertung wird Abbildung 4 aus dem Anhang verwendet.
+            Bei Brom ist die K-Kante bei einem Winkel von $13.4°$ zu sehen. Nach 
+            Gleichung \eqref{eqn:bragg-energie} ergibt sich dadurch eine Absorptionsenergie
+            von 
+            \\ \\
+            \centerline{$E_{\symup{K, Br}} = 13.29$keV,}
+            \\ \\
+            welche somit $1.37 \%$ vom Literaturwert
+            \\ \\
+            \centerline{$E_{\symup{Lit, Br}} = 13.474$ keV \cite{periodic}}
+            \\ \\
+            abweicht. Mit Gleichung \eqref{eqn:fein-struktur} errechnet sich die 
+            zugehörige Abschirmkonstante zu 
+            \\ \\
+            \centerline{$\sigma_{\symup{K, Br}} = 3.74$,}
+            \\ \\
+            welche vom zuvor bestimmten Wert
+            \\ \\
+            \centerline{$\sigma_{\symup{Lit, Br}} = 3.52$}
+            \\ \\
+            um $6.25 \%$ abweicht. Die einzusetzende Ordnungszahl von Brom 
+            ist $Z = 35$.
+        \subsubsection{Strontium}
+            Das Absorptionsspektrum von Strontium ist in Abbildung 5 des Anhanges zu sehen.
+            Das Maximum wird hier bei einem Winkel von $11.2°$ erreicht, womit sich nach 
+            Gleichung \eqref{eqn:bragg-energie} eine Absorptionsenergie von 
+            \\ \\
+            \centerline{$E_{\symup{K, Sr}} = 15.85$keV}  
+            \\ \\
+            ergibt. Verglichen mit dem Literaturwert
+            \\ \\
+            \centerline{$E_{\symup{Lit, Sr}} = 16.105$ keV \cite{periodic}}
+            \\ \\
+            ergibt sich eine relative Abweichung von $1.58 \%$. Die Abschirmkonstante
+            errechnet sich wieder über Gleichung \eqref{eqn:fein-struktur}, wobei die
+            Ordnungszahl hier $Z = 38$ ist, zu
+            \\ \\
+            \centerline{$\sigma_{\symup{K, Sr}} = 4.58$.} 
+            \\ \\
+            Diese weicht um $27.57 \%$ vom zuvor bestimmten Wert von 
+            \\ \\
+            \centerline{$\sigma_{\symup{Lit, Sr}} = 3.59$}
+            \\ \\
+            ab.
 
+        \subsubsection{Zirkonium}
+            Aus Abbildung 6 des Anhangs ist die K-Kante von Zirkonium bei einem 
+            Winkel von $10.8°$ abzulesen.
+            Damit errechnet sich über Gleichung \eqref{eqn:bragg-energie} die Absorptionsenergie
+            \\ \\
+            \centerline{$E_{\symup{K, Zr}} = 16.43$keV,}  
+            \\ \\
+            welche eine Abweichung von $8.71 \%$ vom Literaturwert
+            \\ \\
+            \centerline{$E_{\symup{Lit, Zr}} = 17.998$ keV \cite{periodic}}
+            \\ \\
+            abweicht. Mittels Gleichung \eqref{eqn:fein-struktur} und der Ordnungszahl $Z = 40$
+            ist die Abschirmkonstante
+            \\ \\
+            \centerline{$\sigma_{\symup{K, Zr}} = 5.23$} 
+            \\ \\
+            und weicht damit um $44.47 \%$ vom Vergleichswert
+            \\ \\
+            \centerline{$\sigma_{\symup{Lit, Zr}} = 3.62$}
+            \\ \\
+            ab.
+    \subsection{Bestimmung der Rydbergkonstante}  
+        Die Ordnungszahlen der zuvor untersuchten Elemente werden gegen die Wurzel der in \autoref{sec:bah} bestimmten Absorptionsenergien
+        aufgetragen. Dies ist in \autoref{fig:ekz} dargestellt. 
+        Über die Punkte wird mittels Python 3.7.0 eine lineare Regression durchgeführt, sodass sich eine Funktion der Form
+        \begin{equation}
+        \label{eqn:regress}
+            \sqrt{E_{\symup{K}}} = a \cdot Z + b
+        \end{equation}
+        ergibt. Dadurch ergeben sich folgende Werte:
+        \\ \\
+        \centerline{$a = (3.58 \pm 0.01) \frac{\sqrt{\symup{eV}}}{Ordnungszahl} $}
+        \\ \\
+        \centerline{$b = (-9.36 \pm 0.40 \sqrt{\symup{eV}}$.}
+        \\ \\
+        Die Rydbergenergie lässt sich aus der Steigung $a$ ermitteln und beträgt
+        \\ \\
+        \centerline{$R_{\infty, gem} = 12.86$ eV.}
+        \\ \\
+        Dieser Wert hat eine Abweichung von $5.44 \%$ von der tatsächlichen Rydbergenergie
+        \\ \\
+        \centerline{$R_{\infty} = 13.6$ eV.}
+        \\ \\
+        \begin{figure}
+            \centering
+            \includegraphics{ekz.pdf}
+            \caption{Ordungszahl $Z$ gegen die Wurzeln der Apsorbtionsenergien an den K-Linien mit Ausgleichsgerade.}
+            \label{fig:ekz}
+        \end{figure}
+
+        \subsection{Bestimmung der Abschirmkonstanten von Gold}
+        Das Absorptionsspektrum von Gold ist in Abbildung 7 des Anhanges zu sehen. Daraus sind die Winkel der auftretenden L-Kanten zu entnehmen.
+        Diese liegen bei:
+        \\ \\
+        \centerline{$\theta_{\symup{L,3}} = 15.2°$,}
+        \\ \\
+        \centerline{$\theta_{\symup{L,2}} = 13.0°$.}
+        \\ \\
+        Mittels Gleichung \eqref{eqn:bragg-energie} lassen sich die Energien der beiden Kanten zu
+        \\ \\
+        \centerline{$E_{\symup{L,3}} = 11.75$ keV,}
+        \\ \\
+        \centerline{$E_{\symup{L,2}} = 13.69$ keV,}
+        \\ \\
+        berechnen, woraus sich die Energiedifferenz zu
+        \\ \\
+        \centerline{$\delta E = E_{\symup{L,2}} - E_{\symup{L,3}} = 1.94$ keV}
+        \\ \\
+        berechnet. Die Abschirmkonstante berechnet sich dann nach Gleichung \eqref{eqn:abschirm} zu 
+        \\ \\
+        \centerline{$\sigma_{\symup{L}} = 2.41$.}
+        \\ \\
+        
 
 
 
