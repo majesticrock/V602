@@ -3,7 +3,7 @@
 
 \subsection{Überprüfung der Bragg-Bedingung}
     Zur Überprüfung der Bragg-Bedingung wird die Abbildung 1 aus dem Anhang verwendet. 
-    Hier der Winkel unter dem das Maximum zu sehen ist aufgenommen. Dieser liegt bei 
+    Hierzu wird der Winkel unter dem das Maximum zu sehen ist, aufgenommen. Dieser liegt bei 
     \\ \\
     \centerline{$\theta = 13.65°$}
     \\ \\
@@ -20,19 +20,19 @@
         \\ \\
         \centerline{$\theta = 4.70° $.}
         \\ \\
-        Mittels Gleichung GLEICHUNGENERGIEWINKEL ergibt sich damit eine maximale Energie von
+        Mittels Gleichung \eqref{eqn:bragg-energie} ergibt sich damit eine maximale Energie von
         \\ \\
         \centerline{$E_{\symup{max}} = 37.57$keV}
         \\ \\ 
-        und damit nach Gleichung GLEICHUNGWINKELWELLENLÄNGE eine minimale Wellenlänge von
+        und damit nach Gleichung \eqref{eqn:lambda-min} eine minimale Wellenlänge von
         \\ \\
         \centerline{$\lambda_{\symup{min}} = 3.3 \cdot 10^{-11}$m.}
         \\ \\
-        Der Theoriewert liegt nach Gleichung GLEICHUNGREINEENERGIE bei 
+        Der Theoriewert liegt  bei 
         \\ \\
-        \centerline{$E_{\symup{theorie}} = 35$keV}
+        \centerline{$E_{\symup{theorie}} = e_0 \cdot U = 35$keV}
         \\ \\
-        und damit um $7.35 \%$ unterhalb des gemessenen Wertes.
+        und damit um $7.35 \%$ unterhalb des gemessenen Wertes, wobei $e_0$ die Elementarladung und $U$ die angelegte Spannung ist.
 
     \subsubsection{Auflösungsvermögen der Apparatur}
         \label{sec:cu} 
@@ -43,7 +43,7 @@
         \centerline{$\theta_{\symup{\alpha}} = 22.50°$}
         \centerline{$\theta_{\symup{\beta}} = 20.29°$.}
         \\ \\
-        Die zugehörigen Energien berechnen sich nach GLEICHUNGENERGIEWINKEL zu
+        Die zugehörigen Energien berechnen sich nach Gleichung \eqref{eqn:bragg-energie} zu
         \\ \\
         \centerline{$E_{\symup{\alpha}} = 8.04$ keV}
         \\ \\
@@ -59,10 +59,12 @@
         \\ \\
         \centerline{$\lambda_{\symup{Aufl}} = 1.49 \cdot 10^{-6}$.}
         \\ \\
+        Dies entspricht näherungsweise einem abzulesenden Winkel von $\theta = 8.6 \cdot 10^{-15} °$, was deutlich unterhalb der Genauigkeit
+        liegt, mit der  Menschen 
+        aus den Diagrammen ablesen können, weshalb die Berechnung eines statistischen Fehlers nicht sinnvoll ist.
 
-        STATISTISCHER FEHLER
     \subsubsection{Bestimmung der Abschirmkonstante}
-        Es werden die Winkel aufgenommen unter denen die $K_{\symup{\alpha}}$ beziehungsweise die $K_{\symup{\beta}}$ auftreten.
+        Es werden die Winkel aufgenommen unter denen die $K_{\symup{\alpha}}$- beziehungsweise die $K_{\symup{\beta}}$-Linien auftreten.
         Sie liegen bei
         \\ \\
         \centerline{$\theta_{\symup{K_{\symup{\alpha}}}} = 22.21°$}
@@ -71,7 +73,7 @@
         \\ \\
         \centerline{$\theta_{\symup{K_{\symup{\beta}}}} = 20.00°$.}
         \\ \\
-        Durch Gleichung GLEICHUNGENERGIEWINKEL lassen sich die zugehörigen Engergien, 
+        Durch Gleichung \eqref{eqn:bragg-energie} lassen sich die zugehörigen Engergien, 
         \\ \\
         \centerline{$E_{\symup{\alpha}} = 8.14 $keV}
         \centerline{$E_{\symup{\beta}} = 9.00 $keV.}
@@ -79,15 +81,15 @@
         berechnen.
         Die Abschirmkonstanten berechnen sich dann zu:
         \\ \\
-        \centerline{$\sigma_1 = z - \sqrt{\frac{E_{\symup{\beta}}}{R_{\inf}} } = 3.46 $}
-        \centerline{$\sigma_2 = z - 2 \sqrt{\frac{R_{\inf}(z - \sigma_1)^2 - E_{\symup{\alpha}}}{R_{\inf}}} = 13.24 $,}
+        \centerline{$\sigma_1 = z - \sqrt{\frac{E_{\symup{\beta}}}{R_{\infty}} } = 3.46 $,}
+        \centerline{$\sigma_2 = z - 2 \sqrt{\frac{R_{\infty}(z - \sigma_1)^2 - E_{\symup{\alpha}}}{R_{\infty}}} = 13.24 $,}
         \\ \\
         wobei $z = 29$ die Ordungszahl von Kupfer und $R_{\infty} = 13.6 \symup{eV}$ die Rydbergenergie ist.
 \subsection{Bestimmung der Abschirmkonstanten verschiedener Elemente} 
 \label{sec:bah}
     In diesem Versuchsteil sind Absorbstionsspektren verschiedener Elemente aufgenommen worden. Aus diesen werden die Energien der 
     K-Kanten entnommen und daraus die zugehörigen Abschirmzahlen bestimmt. Diese werden mit Literaturwerten verglichen.
-        \input{../content/messung.tex}
+        
         \subsubsection{Zink}
             Das Absorptionsspektrum von Zink ist in Abbildung 3 des Anhanges zu sehen.
             Die K-Kante von Zink ist bei einem Winkel von $18.9°$ zu sehen. Der darauffolgende
@@ -190,7 +192,7 @@
         \end{equation}
         ergibt. Dadurch ergeben sich folgende Werte:
         \\ \\
-        \centerline{$a = (3.58 \pm 0.01) \frac{\sqrt{\symup{eV}}}{Ordnungszahl} $}
+        \centerline{$a = (3.58 \pm 0.01) \frac{\sqrt{\symup{eV}}}{\text{Ordnungszahl}} $}
         \\ \\
         \centerline{$b = (-9.36 \pm 0.40 \sqrt{\symup{eV}}$.}
         \\ \\
@@ -227,7 +229,7 @@
         \\ \\
         \centerline{$\delta E = E_{\symup{L,2}} - E_{\symup{L,3}} = 1.94$ keV}
         \\ \\
-        berechnet. Die Abschirmkonstante berechnet sich dann nach Gleichung \eqref{eqn:abschirm} zu 
+        berechnet. Die Abschirmkonstante berechnet sich dann nach Gleichung \eqref{eqn:abschirm} mit der Ordnungszahl $Z = 79$zu 
         \\ \\
         \centerline{$\sigma_{\symup{L}} = 2.41$.}
         \\ \\

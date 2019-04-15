@@ -32,3 +32,9 @@ while j < 4:
     j = j+1
 
 print(K)
+E = 0.83
+lamk = c * h / E
+print(lamk/ 2 * d)
+t = np.arcsin(lamk/(2 * d))
+
+teta = t * 180/np.pi

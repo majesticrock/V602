@@ -3,7 +3,7 @@ build/ekz.pdf: ekz.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS=$$(pwd): python ekz.py
 
 # hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-build/main.pdf: 
+build/main.pdf: build/ekz.pdf
 
 build/main.pdf: FORCE | build
 	  TEXINPUTS=build: \
