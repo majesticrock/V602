@@ -56,42 +56,22 @@
         \centerline{$\theta_{\symup{\beta,1}} = (20.00 \pm 0.35)°$}
         \centerline{$\theta_{\symup{\beta,2}} = (20.44 \pm 0.35)°$.}
         \\ \\
-        Die Differenzen der Winkel ergeben sich damit zu
+        Aus den Winkeln ergeben sich mittels Gleichung \eqref{eqn:bragg-energie} und \eqref{eqn:fehlerE} die zugehörigen Energien
         \\ \\
-        \centerline{$\Delta \theta_{\symup{\alpha}} = 0.6 \pm 0.5 $}
-        \centerline{$\Delta \theta_{\symup{\beta}} = 0.4 \pm 0.5 $,}
+        \centerline{$E_{\symup{\alpha,1}} = (8.20 \pm 0.12)$keV}
+        \centerline{$E_{\symup{\alpha,2}} = (8.00 \pm 0.12)$keV}
+        \centerline{$E_{\symup{\beta,1}} =  (9.00 \pm 0.15)$keV}
+        \centerline{$E_{\symup{\beta,2}} =  (8.81 \pm 0.14)$keV,}
         \\ \\
-
-
-
-        Um die Auflösung zu bestimmen wird der Mittelwert über diese beiden Werte gebildet, wobei sich der Fehler zu 
-
-
-
-        ergibt. Der Mittelwert beträgt damit:
-
-
-        
-        Die zugehörigen Energien berechnen sich nach Gleichung \eqref{eqn:bragg-energie} zu
+        woraus sich die Engergiedifferenzen
         \\ \\
-        \centerline{$E_{\symup{\alpha}} = 8.04$ keV}
+        \centerline{$E_{\symup{\alpha}} = (0.2 \pm 0.17)$keV}
+        \centerline{$E_{\symup{\beta}} = (0.19 \pm 0.21)$keV}
         \\ \\
-        und 
-        \centerline{$E_{\symup{\beta}} = 8.88$ keV,}
+        ergeben. Über diese Differenzen wird nun gemittelt um eine Energieauflöung von
         \\ \\
-        womit sich eine Energiedifferenz von 
+        \centerline{$E = (0.20 \pm 0.14) $keV.}
         \\ \\
-        \centerline{$\Delta E = E_{\symup{\beta}} - E_{\symup{\alpha}} = 0.83$eV,}
-        \\ \\
-        was auch die Energieauflösung ist.
-        Dadurch ergibt sich eine Wellenlängenauflösung von 
-        \\ \\
-        \centerline{$\lambda_{\symup{Aufl}} = 1.49 \cdot 10^{-6}$.}
-        \\ \\
-        Dies entspricht näherungsweise einem abzulesenden Winkel von $\theta = 8.6 \cdot 10^{-15} °$, was deutlich unterhalb der Genauigkeit
-        liegt, mit der  Menschen 
-        aus den Diagrammen ablesen können, weshalb die Berechnung eines statistischen Fehlers nicht sinnvoll ist.
-
     \subsubsection{Bestimmung der Abschirmkonstante}
         Es werden die Winkel aufgenommen unter denen die $K_{\symup{\alpha}}$- beziehungsweise die $K_{\symup{\beta}}$-Linien auftreten.
         Sie liegen bei
@@ -112,10 +92,20 @@
         Die Abschirmkonstanten berechnen sich dann zu:
         \\ \\
         \centerline{$\sigma_1 = z - \sqrt{\frac{E_{\symup{K}}}{R_{\infty}} } = 3.49 $,}
-        \centerline{$\sigma_2 = z - 2 \sqrt{\frac{R_{\infty}(z - \sigma_1)^2 - E_{\symup{\alpha}}}{R_{\infty}}} = 13.4 \pm 1.1 $,}
-        \centerline{$\sigma_3 = z - 2 \sqrt{\frac{R_{\infty}(z - \sigma_2)^2 - E_{\symup{\alpha}}}{R_{\infty}}} = 13.24$}
+        \centerline{$\sigma_2 = z - 2 \sqrt{\frac{R_{\infty}(z - \sigma_1)^2 - E_{\symup{\alpha}}}{R_{\infty}}} = 13.4 \pm 1.1 $.}
         \\ \\
-        wobei $z = 29$ die Ordungszahl von Kupfer und $R_{\infty} = 13.6 \symup{eV}$ die Rydbergenergie ist.
+        Der Fehler der Abschirmkonstante wird über 
+        \\ \\ 
+        \centerline{$\Delta \sigma_{2,3} = $}
+        \\ \\
+        berechnet.
+        Die dritte Abschirmkonstante wird über 
+        \\ \\
+        \centerline{$\sigma_3 = z - 2 \sqrt{\frac{R_{\infty}(z - \sigma_1)^2 - E_{\symup{\beta}}}{R_{\infty}}}$}
+        \\ \\
+        berechnet, was hier allerdings nicht möglich ist, da der Wurzelterm negativ wird, was auf eine ungenaue Messung von $E_{\symup{\beta}}$ schließen lässt.
+        In allen Rechnungen ist $z = 29$ die Ordungszahl von Kupfer und $R_{\infty} = 13.6 \symup{eV}$ die Rydbergenergie.
+
 \subsection{Bestimmung der Abschirmkonstanten verschiedener Elemente} 
 \label{sec:bah}
     In diesem Versuchsteil sind Absorbstionsspektren verschiedener Elemente aufgenommen worden. Aus diesen werden die Energien der 
@@ -129,7 +119,7 @@
             daher hier nicht weiter beachtet. Mittels Gleichung \eqref{eqn:bragg-energie} und \eqref{eqn:fehlerE} lässt sich
             die Absorptionsenergie an der K-Kante zu 
             \\ \\
-            \centerline{$E_{\symup{K, Zn}} = (9.50 \pm 0.17)$keV}
+            \centerline{$E_{\symup{K, Zn}} = (9.500 \pm 0.17)$keV}
             \\ \\
             bestimmen, wodurch eine Abweichung von $1.67 \%$ vom Literaturwert
             \\ \\
@@ -143,21 +133,21 @@
             Der Fehler der Abschirmkonstante, kann über 
             \begin{equation}
             \label{eqn:fehlerA}
-
+                4rfv
             \end{equation}
             Über die selbe Gleichung wird ein Vergleichswert mit dem Literaturwert der Energie 
             errechnet. Dieser ist
             \\ \\
-            \centerline{$\sigma_{\symup{Lit, Zn}} = 3.35$,}
+            \centerline{$\sigma_{\symup{Lit, Zn}} = 3.54$,}
             \\ \\
-            womit eine Abweichung von $12.24 \%$ vorliegt.
+            womit eine Abweichung von $5.85 \%$ vorliegt.
         \subsubsection{Brom}
             In diesem Teil der Auswertung wird Abbildung 4 aus dem Anhang verwendet.
             Bei Brom ist die K-Kante bei einem Winkel von $(13.4 \pm 0.35)°$ zu sehen. Nach 
             Gleichung \eqref{eqn:bragg-energie} ergibt sich dadurch eine Absorptionsenergie
             von 
             \\ \\
-            \centerline{$E_{\symup{K, Br}} = (13.28 \pm 0.34)$keV,}
+            \centerline{$E_{\symup{K, Br}} = (13.280 \pm 0.34)$keV,}
             \\ \\
             welche somit $1.44 \%$ vom Literaturwert
             \\ \\
@@ -166,11 +156,11 @@
             abweicht. Mit Gleichung \eqref{eqn:fein-struktur} errechnet sich die 
             zugehörige Abschirmkonstante zu 
             \\ \\
-            \centerline{$\sigma_{\symup{K, Br}} = 3.74$,}
+            \centerline{$\sigma_{\symup{K, Br}} = (4.00 \pm 0.4)$,}
             \\ \\
             welche vom zuvor bestimmten Wert
             \\ \\
-            \centerline{$\sigma_{\symup{Lit, Br}} = 3.52$}
+            \centerline{$\sigma_{\symup{Lit, Br}} = 3.75$}
             \\ \\
             um $6.25 \%$ abweicht. Die einzusetzende Ordnungszahl von Brom 
             ist $Z = 35$.
@@ -189,11 +179,11 @@
             errechnet sich wieder über Gleichung \eqref{eqn:fein-struktur}, wobei die
             Ordnungszahl hier $Z = 38$ ist, zu
             \\ \\
-            \centerline{$\sigma_{\symup{K, Sr}} = 4.58$.} 
+            \centerline{$\sigma_{\symup{K, Sr}} = (4.1 \pm 0.5)$.} 
             \\ \\
-            Diese weicht um $27.57 \%$ vom zuvor bestimmten Wert von 
+            Diese weicht um $6.34 \%$ vom zuvor bestimmten Wert von 
             \\ \\
-            \centerline{$\sigma_{\symup{Lit, Sr}} = 3.59$}
+            \centerline{$\sigma_{\symup{Lit, Sr}} = 3.84$}
             \\ \\
             ab.
 
@@ -204,25 +194,26 @@
             Werten entsprechen.
             Damit errechnet sich über Gleichung \eqref{eqn:bragg-energie} die Absorptionsenergie
             \\ \\
-            \centerline{$E_{\symup{K, Zr}} = (16.40 \pm 0.5)$keV,}  
+            \centerline{$E_{\symup{K, Zr}} = (16.400 \pm 0.5)$keV,}  
             \\ \\
-            welche eine Abweichung von $9.74 \%$ vom Literaturwert
+            welche eine Abweichung von $8.87 \%$ vom Literaturwert
             \\ \\
             \centerline{$E_{\symup{Lit, Zr}} = 17.998$ keV \cite{periodic}}
             \\ \\
             abweicht. Mittels Gleichung \eqref{eqn:fein-struktur} und der Ordnungszahl $Z = 40$
             ist die Abschirmkonstante
             \\ \\
-            \centerline{$\sigma_{\symup{K, Zr}} = 5.23$} 
+            \centerline{$\sigma_{\symup{K, Zr}} = (3.5 \pm 0.6)$} 
             \\ \\
-            und weicht damit um $44.47 \%$ vom Vergleichswert
+            und weicht damit um $46.29 \%$ vom Vergleichswert
             \\ \\
-            \centerline{$\sigma_{\symup{Lit, Zr}} = 3.62$}
+            \centerline{$\sigma_{\symup{Lit, Zr}} = 1.88$}
             \\ \\
             ab.
     \subsection{Bestimmung der Rydbergkonstante}  
         Die Ordnungszahlen der zuvor untersuchten Elemente werden gegen die Wurzel der in \autoref{sec:bah} bestimmten Absorptionsenergien
-        aufgetragen. Dies ist in \autoref{fig:ekz} dargestellt. 
+        aufgetragen. Dies ist in \autoref{fig:ekz} dargestellt. Dabei werden die Werte von Zirkonium ausgelassen, da diese, wie bereits 
+        erwähnt nicht den tatsächlichen entsprechen und damit das Ergebnis verfälschen würden.
         Über die Punkte wird mittels Python 3.7.0 eine lineare Regression durchgeführt, sodass sich eine Funktion der Form
         \begin{equation}
         \label{eqn:regress}
@@ -230,15 +221,15 @@
         \end{equation}
         ergibt. Dadurch ergeben sich folgende Werte:
         \\ \\
-        \centerline{$a = (3.58 \pm 0.01) \frac{\sqrt{\symup{eV}}}{\text{Ordnungszahl}} $}
+        \centerline{$a = (3.53 \pm 0.02) \frac{\sqrt{\symup{eV}}}{\text{Ordnungszahl}} $}
         \\ \\
-        \centerline{$b = (-9.36 \pm 0.40 \sqrt{\symup{eV}}$.}
+        \centerline{$b = (-8.44 \pm 0.61 \sqrt{\symup{eV}}$.}
         \\ \\
         Die Rydbergenergie lässt sich aus der Steigung $a$ ermitteln und beträgt
         \\ \\
-        \centerline{$R_{\infty, gem} = 12.86$ eV.}
+        \centerline{$R_{\infty, gem} = (12.47 \pm 0.0003)$ eV.}
         \\ \\
-        Dieser Wert hat eine Abweichung von $5.44 \%$ von der tatsächlichen Rydbergenergie
+        Dieser Wert hat eine Abweichung von $9.06 \%$ von der tatsächlichen Rydbergenergie
         \\ \\
         \centerline{$R_{\infty} = 13.6$ eV.}
         \\ \\
@@ -253,23 +244,23 @@
         Das Absorptionsspektrum von Gold ist in Abbildung 7 des Anhanges zu sehen. Daraus sind die Winkel der auftretenden L-Kanten zu entnehmen.
         Diese liegen bei:
         \\ \\
-        \centerline{$\theta_{\symup{L,3}} = 15.2°$,}
+        \centerline{$\theta_{\symup{L,3}} = (15.2 \pm 0.35)°$,}
         \\ \\
-        \centerline{$\theta_{\symup{L,2}} = 13.0°$.}
+        \centerline{$\theta_{\symup{L,2}} = (13.0 \pm 0.35)°$.}
         \\ \\
-        Mittels Gleichung \eqref{eqn:bragg-energie} lassen sich die Energien der beiden Kanten zu
+        Mittels Gleichung \eqref{eqn:bragg-energie} und \eqref{eqn:fehlerE} lassen sich die Energien der beiden Kanten zu
         \\ \\
-        \centerline{$E_{\symup{L,3}} = 11.75$ keV,}
+        \centerline{$E_{\symup{L,3}} = (11.74 \pm 0.26)$ keV,}
         \\ \\
-        \centerline{$E_{\symup{L,2}} = 13.69$ keV,}
+        \centerline{$E_{\symup{L,2}} = (13.70 \pm 0.4)$ keV,}
         \\ \\
         berechnen, woraus sich die Energiedifferenz zu
         \\ \\
-        \centerline{$\delta E = E_{\symup{L,2}} - E_{\symup{L,3}} = 1.94$ keV}
+        \centerline{$\delta E = E_{\symup{L,2}} - E_{\symup{L,3}} = (1.9 \pm 0.4)$ keV}
         \\ \\
         berechnet. Die Abschirmkonstante berechnet sich dann nach Gleichung \eqref{eqn:abschirm} mit der Ordnungszahl $Z = 79$zu 
         \\ \\
-        \centerline{$\sigma_{\symup{L}} = 2.41$.}
+        \centerline{$\sigma_{\symup{L}} = (2 \pm 4)$.}
         \\ \\
         
 

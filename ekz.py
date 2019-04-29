@@ -20,8 +20,8 @@ def func(x, a, b):
     return a*x + b
 
 werte = csv_read("csv/messung.csv")
-xdata = np.zeros(4)
-ydata = np.zeros(4)
+xdata = np.zeros(3)
+ydata = np.zeros(3)
 
 ignore = True
 i=0
@@ -29,7 +29,7 @@ for values in werte:
     if(ignore):
         ignore = False
     else:
-        ydata[i] = np.sqrt(float(values[2]))
+        ydata[i] = np.sqrt(float(values[4]))
         xdata[i] =  float(values[1]) 
         i+=1
 
