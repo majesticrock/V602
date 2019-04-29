@@ -7,9 +7,8 @@
     \\ \\
     \centerline{$\theta = 13.65°$}
     \\ \\
-    und weicht damit um $2.5\%$ vom eingestelltem Winkel $\theta = 14°$ ab.
-
-
+    und weicht damit um $0.35°$ ($2.5\%$) vom eingestelltem Winkel $\theta = 14°$ ab.
+    Daher weisen alle weiteren gemessenen Winkel den gleichen Fehler auf.
 
 \subsection{Das Emmissionsspektrum von Kupfer}
     Für diesen Auswertungsteil wird das Emmissionsspektrum von Kupfer, dargestellt in Abbildung 2
@@ -18,21 +17,33 @@
         Zur Bestimmung der maximalen Energie des Bremsspektrums von Kupfer wird der kleinste Winkel aus der Grafik abgelesen, bei dem sich 
         das Spektrum von Null unterscheidet. Dieser liegt bei 
         \\ \\
-        \centerline{$\theta = 4.70° $.}
+        \centerline{$\theta = (4.70  \pm 0.35)° $.}
         \\ \\
         Mittels Gleichung \eqref{eqn:bragg-energie} ergibt sich damit eine maximale Energie von
         \\ \\
-        \centerline{$E_{\symup{max}} = 37.57$keV}
+        \centerline{$E_{\symup{max}} = (37.76 \pm 2.8)$keV}
         \\ \\ 
         und damit nach Gleichung \eqref{eqn:lambda-min} eine minimale Wellenlänge von
         \\ \\
-        \centerline{$\lambda_{\symup{min}} = 3.3 \cdot 10^{-11}$m.}
+        \centerline{$\lambda_{\symup{min}} = (3.3 \pm 0.25) \cdot 10^{-11}$m.}
         \\ \\
+        Die Fehler der Gesamtenergie beziehungsweise der Wellenlänge ergeben sich mittels Gaußscher Fehlerfortpflanzung zu 
+        \begin{equation}
+        \label{eqn:fehlerE}
+            \Delta E = \frac{h c}{2 d} \cdot \frac{\cos{\theta}}{\sin^2{\theta}} \Delta \theta
+        \end{equation}
+        und 
+        \begin{equation}
+        \label{eqn:fehlerL}
+            \Delta \lambda = \frac{h c}{E^2} \Delta E,
+        \end{equation}
+        wobei $h$ das Plancksche Winkungsquantum, $c$ die Lichtgeschwindigkeit, $d$ die Gitterkonstante und die mit $\Delta$ bezeichneten
+        Größen die absoulten Fehler dieser sind. 
         Der Theoriewert liegt  bei 
         \\ \\
         \centerline{$E_{\symup{theorie}} = e_0 \cdot U = 35$keV}
         \\ \\
-        und damit um $7.35 \%$ unterhalb des gemessenen Wertes, wobei $e_0$ die Elementarladung und $U$ die angelegte Spannung ist.
+        und damit um $7.31 \%$ unterhalb des gemessenen Wertes, wobei $e_0$ die Elementarladung und $U$ die angelegte Spannung ist.
 
     \subsubsection{Auflösungsvermögen der Apparatur}
         \label{sec:cu} 
@@ -40,9 +51,13 @@
         Line auf die Hälfte ihres Maximums abgesunken sind.
         Diese liegen bei:
         \\ \\
-        \centerline{$\theta_{\symup{\alpha}} = 22.50°$}
-        \centerline{$\theta_{\symup{\beta}} = 20.29°$.}
+        \centerline{$\theta_{\symup{\alpha,1}} = (22.06 \pm 0.35)°$}
+        \centerline{$\theta_{\symup{\alpha,2}} = (22.64 \pm 0.35)°$}
+        \centerline{$\theta_{\symup{\beta,1}} = (20.00 \pm 0.35)°$}
+        \centerline{$\theta_{\symup{\beta,2}} = (20.44 \pm 0.35)°$.}
         \\ \\
+        Die Differenzen der Winkel ergeben sich damit zu
+        
         Die zugehörigen Energien berechnen sich nach Gleichung \eqref{eqn:bragg-energie} zu
         \\ \\
         \centerline{$E_{\symup{\alpha}} = 8.04$ keV}
