@@ -5,7 +5,7 @@ In diesem Versuch werden das Emissionsspektrum einer Kupfer-Röntgenröhre sowie
 \label{sec:Theorie}
 
 Röntgenstrahlen werden erzeugt, in dem in einer evakuierten Röhre Elektronen aus einer Glühkathode beschleunigt werden.
-Diese treffen auf eine Kupferanode. An dieser werden sie werden sie abgebremst und die verlorene kinetische Energie wird in ein Photon umgewandelt. Entsteht ein kontinuierliches Bremsspektrum wie in \autoref{fig:theo-brems} zu sehen.
+Diese treffen auf eine Kupferanode. An dieser werden sie werden sie abgebremst und die verlorene kinetische Energie wird in Photonen umgewandelt. Entsteht ein kontinuierliches Bremsspektrum wie in \autoref{fig:theo-brems} zu sehen.
 
 \begin{figure}
     \centering
@@ -22,6 +22,7 @@ Geben sie ihre gesamte Energie ab, so hat der Lichtquant entsprechend die minima
     \lambda_\text{min} = \frac{h c}{e_0 U}.
 \end{equation}
 
+Dabei ist $h$ das Planck'sche Wirkungsquantum und $c$ die Lichtgeschwindigkeit.
 Das kontinuierliche Spektrum wird des Weiteren von einem charakteristischen Spektrum überlagert.
 Dieses entsteht, wenn die Elektronen ein Atom ionisieren. Anschließend fällt ein Elektron aus einer höheren Schale herunter und emittiert ein Photon mit einer materialspezifischen Energie.
 Die Frequenz dieses Photons wird mittels
@@ -66,11 +67,11 @@ Somit berechnet sich die Abschirmkonstante wie folgt:
 
 \begin{equation}
     \label{eqn:abschirm}
-    \sigma_\text{L} = Z - \bigg( \frac{4}{\alpha} \sqrt{\frac{Delta E_\text{L}}{R_\infty }} - \frac{5 \Delta E_\text{L}}{R_\infty} \bigg)^\frac{1}{2} \cdot \bigg( 1 + \frac{19}{32} \alpha^2 \frac{\Delta E_\text{L}}{R_\infty} \bigg)^\frac{1}{2}.
+    \sigma_\text{L} = Z - \bigg( \frac{4}{\alpha} \sqrt{\frac{\Delta E_\text{L}}{R_\infty }} - \frac{5 \Delta E_\text{L}}{R_\infty} \bigg)^\frac{1}{2} \cdot \bigg( 1 + \frac{19}{32} \alpha^2 \frac{\Delta E_\text{L}}{R_\infty} \bigg)^\frac{1}{2}.
 \end{equation}
 
 Die Energie eines Röntgenquants wird experimentell mittels Bragg'scher Reflexion bestimmt.
-Dabei wird das Licht an einem Kristall reflektiert und man erhält bei einem Glannzwinkel $\theta$ konstruktive Interferenz.
+Dabei wird das Licht an einem Kristall reflektiert und es entsteht bei einem Glanzwinkel $\theta$ konstruktive Interferenz.
 Ist die Gitterkonstate $d$ des Kristalls bekannt, kann die zum Winkel gehörige Wellenlänge über die Bragg'sche Bedingung
 
 \begin{equation}
@@ -83,7 +84,5 @@ berechnet werden. Dabei ist $n$ die Ordnung, bei der die Interferenz auftritt.
 
 \begin{equation}
     \label{eqn:bragg-energie}
-    E = \frac{h c}{2 d \sin (\theta )},
+    E = \frac{h c}{2 d \sin (\theta )}.
 \end{equation}
-
-wobei $h$ das Planck'sche Wirkungsquantum und $c$ die Lichtgeschwindigkeit ist.
