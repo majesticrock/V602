@@ -38,7 +38,7 @@
             \Delta \lambda = \frac{h c}{E^2} \Delta E,
         \end{equation}
         wobei $h$ das Plancksche Winkungsquantum, $c$ die Lichtgeschwindigkeit, $d$ die Gitterkonstante und die mit $\Delta$ bezeichneten
-        Größen die absoulten Fehler dieser sind. 
+        Größen die absoluten Fehler dieser sind. 
         Der Theoriewert liegt  bei 
         \\ \\
         \centerline{$E_{\symup{theorie}} = e_0 \cdot U = 35$keV}
@@ -57,6 +57,20 @@
         \centerline{$\theta_{\symup{\beta,2}} = (20.44 \pm 0.35)°$.}
         \\ \\
         Die Differenzen der Winkel ergeben sich damit zu
+        \\ \\
+        \centerline{$\Delta \theta_{\symup{\alpha}} = 0.6 \pm 0.5 $}
+        \centerline{$\Delta \theta_{\symup{\beta}} = 0.4 \pm 0.5 $,}
+        \\ \\
+
+
+
+        Um die Auflösung zu bestimmen wird der Mittelwert über diese beiden Werte gebildet, wobei sich der Fehler zu 
+
+
+
+        ergibt. Der Mittelwert beträgt damit:
+
+
         
         Die zugehörigen Energien berechnen sich nach Gleichung \eqref{eqn:bragg-energie} zu
         \\ \\
@@ -82,22 +96,24 @@
         Es werden die Winkel aufgenommen unter denen die $K_{\symup{\alpha}}$- beziehungsweise die $K_{\symup{\beta}}$-Linien auftreten.
         Sie liegen bei
         \\ \\
-        \centerline{$\theta_{\symup{K_{\symup{\alpha}}}} = 22.21°$}
+        \centerline{$\theta_{\symup{K_{\symup{\alpha}}}} = (22.21 \pm 0.35)°$}
         \\ \\
         und 
         \\ \\
-        \centerline{$\theta_{\symup{K_{\symup{\beta}}}} = 20.00°$.}
+        \centerline{$\theta_{\symup{K_{\symup{\beta}}}} = (20.00 \pm 0.35)°$.}
         \\ \\
-        Durch Gleichung \eqref{eqn:bragg-energie} lassen sich die zugehörigen Engergien, 
+        Durch die Gleichungen \eqref{eqn:bragg-energie} und \eqref{eqn:fehlerE} lassen sich die zugehörigen Engergien, 
         \\ \\
-        \centerline{$E_{\symup{\alpha}} = 8.14 $keV}
-        \centerline{$E_{\symup{\beta}} = 9.00 $keV.}
+        \centerline{$E_{\symup{\alpha}} = (8.14 \pm 0.12) $keV}
+        \centerline{$E_{\symup{\beta}} = (9.00 \pm 0.15) $keV.}
         \\ \\
         berechnen.
+        Der Theoriewert der K-Kante liegt bei $K = 8.979 \symup{keV}$ \cite[periodic], über die die erste Abschirmkonstante berechnet werden kann.
         Die Abschirmkonstanten berechnen sich dann zu:
         \\ \\
-        \centerline{$\sigma_1 = z - \sqrt{\frac{E_{\symup{\beta}}}{R_{\infty}} } = 3.46 $,}
-        \centerline{$\sigma_2 = z - 2 \sqrt{\frac{R_{\infty}(z - \sigma_1)^2 - E_{\symup{\alpha}}}{R_{\infty}}} = 13.24 $,}
+        \centerline{$\sigma_1 = z - \sqrt{\frac{E_{\symup{K}}}{R_{\infty}} } = 3.49 $,}
+        \centerline{$\sigma_2 = z - 2 \sqrt{\frac{R_{\infty}(z - \sigma_1)^2 - E_{\symup{\alpha}}}{R_{\infty}}} = 13.4 \pm 1.1 $,}
+        \centerline{$\sigma_3 = z - 2 \sqrt{\frac{R_{\infty}(z - \sigma_2)^2 - E_{\symup{\alpha}}}{R_{\infty}}} = 13.24$}
         \\ \\
         wobei $z = 29$ die Ordungszahl von Kupfer und $R_{\infty} = 13.6 \symup{eV}$ die Rydbergenergie ist.
 \subsection{Bestimmung der Abschirmkonstanten verschiedener Elemente} 
@@ -107,38 +123,43 @@
         
         \subsubsection{Zink}
             Das Absorptionsspektrum von Zink ist in Abbildung 3 des Anhanges zu sehen.
-            Die K-Kante von Zink ist bei einem Winkel von $18.9°$ zu sehen. Der darauffolgende
-            wesentlich stärkere Anstieg bei ca. $20°$ kann mit \autoref{sec:cu} als 
+            Die K-Kante von Zink ist bei einem Winkel von $(18.9 \pm 0.35)°$ zu sehen. Der darauffolgende
+            wesentlich stärkere Anstieg bei ca. $20°$ kann mit Abschnitt 4.2.2 als 
             $\symup{K_{\symup{\beta}}}$-Linie des Kupfers identifiziert werden und wird
-            daher hier nicht weiter beachtet. Mittels Gleichung \eqref{eqn:bragg-energie} lässt sich
+            daher hier nicht weiter beachtet. Mittels Gleichung \eqref{eqn:bragg-energie} und \eqref{eqn:fehlerE} lässt sich
             die Absorptionsenergie an der K-Kante zu 
             \\ \\
-            \centerline{$E_{\symup{K, Zn}} = 9.51$keV}
+            \centerline{$E_{\symup{K, Zn}} = (9.50 \pm 0.17)$keV}
             \\ \\
-            bestimmen, wodurch eine Abweichung von $1.54 \%$ vom Literaturwert
+            bestimmen, wodurch eine Abweichung von $1.67 \%$ vom Literaturwert
             \\ \\
             \centerline{$E_{\symup{Lit, Zn}} = 9.659$ keV \cite{periodic}}
             \\ \\
             vorliegt. Über die Gleichung \eqref{eqn:fein-struktur} wird die Abschirmkonstante 
             \\ \\
-            \centerline{$\sigma_{\symup{K, Zn}} = 3.56$}
+            \centerline{$\sigma_{\symup{K, Zn}} = (3.76 \pm 0.23)$}
             \\ \\
             berechnet, wobei die Ordnungszahl von Zink $Z = 30$ ist.
+            Der Fehler der Abschirmkonstante, kann über 
+            \begin{equation}
+            \label{eqn:fehlerA}
+
+            \end{equation}
             Über die selbe Gleichung wird ein Vergleichswert mit dem Literaturwert der Energie 
             errechnet. Dieser ist
             \\ \\
             \centerline{$\sigma_{\symup{Lit, Zn}} = 3.35$,}
             \\ \\
-            womit eine Abweichung von $5.90 \%$ vorliegt.
+            womit eine Abweichung von $12.24 \%$ vorliegt.
         \subsubsection{Brom}
             In diesem Teil der Auswertung wird Abbildung 4 aus dem Anhang verwendet.
-            Bei Brom ist die K-Kante bei einem Winkel von $13.4°$ zu sehen. Nach 
+            Bei Brom ist die K-Kante bei einem Winkel von $(13.4 \pm 0.35)°$ zu sehen. Nach 
             Gleichung \eqref{eqn:bragg-energie} ergibt sich dadurch eine Absorptionsenergie
             von 
             \\ \\
-            \centerline{$E_{\symup{K, Br}} = 13.29$keV,}
+            \centerline{$E_{\symup{K, Br}} = (13.28 \pm 0.34)$keV,}
             \\ \\
-            welche somit $1.37 \%$ vom Literaturwert
+            welche somit $1.44 \%$ vom Literaturwert
             \\ \\
             \centerline{$E_{\symup{Lit, Br}} = 13.474$ keV \cite{periodic}}
             \\ \\
@@ -155,16 +176,16 @@
             ist $Z = 35$.
         \subsubsection{Strontium}
             Das Absorptionsspektrum von Strontium ist in Abbildung 5 des Anhanges zu sehen.
-            Das Maximum wird hier bei einem Winkel von $11.2°$ erreicht, womit sich nach 
+            Das Maximum wird hier bei einem Winkel von $(11.2 \pm 0.35)°$ erreicht, womit sich nach 
             Gleichung \eqref{eqn:bragg-energie} eine Absorptionsenergie von 
             \\ \\
-            \centerline{$E_{\symup{K, Sr}} = 15.85$keV}  
+            \centerline{$E_{\symup{K, Sr}} = (15.8 \pm 0.5)$keV}  
             \\ \\
             ergibt. Verglichen mit dem Literaturwert
             \\ \\
             \centerline{$E_{\symup{Lit, Sr}} = 16.105$ keV \cite{periodic}}
             \\ \\
-            ergibt sich eine relative Abweichung von $1.58 \%$. Die Abschirmkonstante
+            ergibt sich eine relative Abweichung von $1.93 \%$. Die Abschirmkonstante
             errechnet sich wieder über Gleichung \eqref{eqn:fein-struktur}, wobei die
             Ordnungszahl hier $Z = 38$ ist, zu
             \\ \\
@@ -178,12 +199,14 @@
 
         \subsubsection{Zirkonium}
             Aus Abbildung 6 des Anhangs ist die K-Kante von Zirkonium bei einem 
-            Winkel von $10.8°$ abzulesen.
+            Winkel von $(10.8 \pm 0.35)°$ abzulesen. Dieser Wert ist der kleinste aus der Abbildung ablesbare Winkel. Die 
+            tatsächliche Kante liegt außerhalb des dargestellten Spektrums, weshalb die hier errechneten Werte nicht den tatsächlichen 
+            Werten entsprechen.
             Damit errechnet sich über Gleichung \eqref{eqn:bragg-energie} die Absorptionsenergie
             \\ \\
-            \centerline{$E_{\symup{K, Zr}} = 16.43$keV,}  
+            \centerline{$E_{\symup{K, Zr}} = (16.40 \pm 0.5)$keV,}  
             \\ \\
-            welche eine Abweichung von $8.71 \%$ vom Literaturwert
+            welche eine Abweichung von $9.74 \%$ vom Literaturwert
             \\ \\
             \centerline{$E_{\symup{Lit, Zr}} = 17.998$ keV \cite{periodic}}
             \\ \\

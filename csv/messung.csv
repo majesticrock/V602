@@ -1,5 +1,5 @@
 {Material};{Ordnungzahl};{Literaturwert K-Kante};{gemessener Winkel};{gemessene K-Kante / eV};{berechnete Abschirmzahl};{gemessene Abschirmzahl}
-Brom;     35;13474;13.4;13288;3.52;3.74
-Zink;     30; 9659;18.9;9507;3.35;3.56
-Strontium;38;16105;11.2;15855;3.58;4.58
-Zirkonium;40;17998;10.8;16435;3.62;5.23
+Brom;     35;13474;13.4;13280;3.52;3.74
+Zink;     30; 9659;18.9;9500;3.35;3.56
+Strontium;38;16105;11.2;15800;3.58;4.58
+Zirkonium;40;17998;10.8;16400;3.62;5.23
