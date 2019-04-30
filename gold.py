@@ -12,7 +12,7 @@ h=4.135*10**(-15)
 d=201.4*10**(-12)
 
 theta3 = ufloat(15.2, 0.35)
-theta2 = ufloat(13, 0.35)
+theta2 = ufloat(12.8, 0.35)
 lam3 = 2 * d * unp.sin(theta3*(np.pi/180))
 lam2 = 2 * d * unp.sin(theta2*(np.pi/180))
 E3 = c * h /lam3

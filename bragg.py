@@ -22,20 +22,20 @@ E = h * c / (2 * d * unp.sin(theta))
 Ea = h * c / (2 * d * unp.sin(thetaa))
 Eb = h * c / (2 * d * unp.sin(thetab))
 
-print(E)
-sig1 = 38 - unp.sqrt(17998/R)
-print("sig11", sig1)
+print(Eb)
+#sig1 = 38 - unp.sqrt(17998/R)
+#print("sig11", sig1)
 #Wellenlänge
 #l = h *c / E
 #print(l)
 #Abschirmkonstante Kupfer
-#sig1 = 29 - unp.sqrt(K/R)
-#print("sig1", sig1)
-#
-#sig2 = 29 - 2 * unp.sqrt((R* (29-sig1)**2 - Ea)/R)
-#print("sig2", sig2)
-#sig3 =  29 - 2 * unp.sqrt(-(R* (29-sig1)**2 - Eb)/R)
-#print("sig3", sig3)
+sig1 = 29 - unp.sqrt(K/R)
+print("sig1", sig1)
+Eb = Eb - 22
+sig2 = 29 - 2 * unp.sqrt((R* (29-sig1)**2 - Ea)/R)
+print("sig2", sig2)
+sig3 =  29 - 2 * unp.sqrt((R* (29-sig1)**2 - Eb)/R)
+print("sig3", sig3)
 #
 #print(1/np.sqrt((R* np.sqrt((R *(29-sig1)**2 - 8140) / R) * 120)**2))
 
@@ -63,4 +63,4 @@ print("sig11", sig1)
 x = ufloat(1.37, 0.04)
 y = ufloat(1.174, 0.026)
 print(x-y)
-sigma = 79 - (4/)
+#sigma = 79 - (4/)
